@@ -1,2 +1,25 @@
-# itknow666.github.io
-my personal profile and learning blog
+# NEURAL FRONTIER
+
+这是 itknow 的个人 SNN 学习与研究日志。
+
+我目前仍处在入门阶段。网站用于记录神经网络基础、脉冲神经网络（SNN）学习、实验复现，以及对神经形态计算和脑机交互的长期探索。
+
+## 网站主线
+
+- 从数学、Python 与神经网络基础开始
+- 学习脉冲神经元模型与时间编码
+- 复现小型 SNN 实验
+- 了解神经形态芯片与脑机接口
+- 将 SAO 式全潜行视为科幻启发下的长期精神坐标，而非当前技术承诺
+
+## 技术
+
+网站由原生 HTML、CSS 和 JavaScript 构成，可直接部署到 GitHub Pages。
+
+## 图像说明
+
+站内三幅黑白点画由 AI 根据站长提供的私人参考图重新绘制，仅作为页面装饰。网站不存放私人信件照片。
+
+## 访问
+
+https://itknow666.github.io/
