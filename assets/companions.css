@@ -1,0 +1,70 @@
+/* New illustrations are complete compositions, not crops of the reference comic. */
+.hero-art.original-art {
+  transform: none;
+  background: #121424;
+  border-color: #494260;
+  border-radius: 28px;
+  box-shadow: 0 22px 80px #b5a5fa14;
+}
+.hero-art.original-art > img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.original-art .window-bar {padding: 14px 20px; background: #1d1c2c;}
+.original-art figcaption {padding: 16px 20px; background: #1d1c2c;}
+.portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #191b27;
+}
+.companion-copy {border-top: 1px solid var(--line);}
+.companion-copy h3 {font-size: 20px;}
+.guestbook-greeting {display: flex; align-items: center; gap: 16px; margin: 24px 0 0; color: var(--sub); font-size: 14px;}
+.guestbook-greeting img {width: 64px; height: 64px; border-radius: 20px; border: 1px solid #51466d; flex-shrink: 0;}
+.honor-grid {display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px;}
+.honor-card {position: relative; padding: 30px; display: flex; flex-direction: column; align-items: flex-start;}
+.honor-card h3 {margin-top: 27px; font-size: 22px;}
+.honor-card p {font-size: 16px; margin-bottom: 25px;}
+.honor-card .pill {margin-top: auto;}
+.honor-card:nth-child(1) {background: linear-gradient(145deg,#27283a,#191b27);}
+.honor-card:nth-child(2) {background: linear-gradient(145deg,#20302d,#191b27);}
+.honor-card:nth-child(3) {background: linear-gradient(145deg,#302a30,#191b27);}
+.honor-mark {position: absolute; right: 24px; top: 20px; font-size: 32px; line-height: 1; color: #c1b0ef;}
+.honor-card:nth-child(2) .honor-mark {color: #c7fa9c;}
+.honor-card:nth-child(3) .honor-mark {color: #f6b296;}
+.journey-layout {display: grid; grid-template-columns: .75fr 1.5fr; gap: 64px; margin-top: 45px; padding-top: 25px;}
+.journey-intro h3 {font-size: 27px; line-height: 1.5; margin-top: 18px;}
+.journey-intro p {font-size: 16px;}
+.journey-list {list-style: none; margin: 0; padding: 0 0 0 28px; border-left: 1px solid #454052;}
+.journey-list li {position: relative; padding: 0 0 27px;}
+.journey-list li:before {content: ""; position: absolute; left: -33px; top: 7px; width: 9px; height: 9px; border-radius: 50%; background: var(--purple); box-shadow: 0 0 0 5px var(--bg);}
+.journey-date {font-size: 13px; color: var(--purple); letter-spacing: .5px;}
+.journey-list h3 {margin: 9px 0; font-size: 20px;}
+.journey-list p {font-size: 16px; margin: 0;}
+.journey-list li:last-child {padding-bottom: 0;}
+.nav-links {gap: 24px;}
+@media (max-width: 1050px) {
+  .honor-card {padding: 24px;}
+  .honor-mark {font-size: 24px; right: 15px;}
+  .honor-card .tiny-label {font-size: 11px; letter-spacing: 1px;}
+  .journey-layout {gap: 36px;}
+  .nav-links {gap: 16px;}
+}
+@media (max-width: 800px) {
+  .honor-grid {grid-template-columns: 1fr;}
+  .honor-card h3 {margin-top: 18px;}
+  .honor-card .tiny-label {font-size: 12px;}
+  .journey-layout {grid-template-columns: 1fr; gap: 28px;}
+  .journey-list {margin-left: 7px;}
+  .nav-links {flex-wrap: wrap; justify-content: flex-start; column-gap: 22px; row-gap: 9px;}
+}
+@media (prefers-reduced-motion: no-preference) {
+  .original-art {animation: companion-arrive .65s ease-out both;}
+  @keyframes companion-arrive {from {opacity: 0; transform: translateY(14px);} to {opacity: 1; transform: translateY(0);}}
+}

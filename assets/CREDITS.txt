@@ -1,0 +1,10 @@
+LLM logos: Lobe Icons — https://github.com/lobehub/lobe-icons
+SVG files retrieved from @lobehub/icons-static-svg.
+Brand marks belong to their respective owners; display does not imply affiliation.
+AI companion illustrations: newly generated for this website with the built-in imagegen tool,
+using the user-supplied comic only as style and subject inspiration.
+ai-companions-original.png — new group scene of three chibi AI companions.
+ai-silver-original.png — new silver-haired dragon-girl mascot.
+ai-amber-original.png — new orange-haired reading mascot.
+The reference comic itself is not displayed or included in the v2 deployment package.
+Mascots and nicknames are unofficial creative interpretations, not official brand characters.
