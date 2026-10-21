@@ -1,25 +1,20 @@
-# NEURAL FRONTIER
+# hawaii-0 的小屋 — GitHub Pages 部署包
 
-这是 itknow 的个人 SNN 学习与研究日志。
+本包已经是静态网站，无需 npm install、npm run build，也没有 dist 目录。
 
-我目前仍处在入门阶段。网站用于记录神经网络基础、脉冲神经网络（SNN）学习、实验复现，以及对神经形态计算和脑机交互的长期探索。
+1. 在电脑上解压 ZIP。不要将 ZIP 文件本身上传作为网站。
+2. 将解压后的 index.html、assets/、documents/、projects/、.nojekyll 和 README.md 上传到 GitHub 仓库根目录。不要额外套一层 hawaii-0-blue-room-site 文件夹。
+3. 打开仓库 Settings → Pages。
+4. Source 选择 Deploy from a branch。
+5. Branch 选择实际上传文件的分支（通常是 main），目录选择 /(root)，点击 Save。
+6. 等待 Pages 部署完成，使用 Pages 页面显示的网站地址访问。
 
-## 网站主线
+正确的仓库结构：
+index.html
+assets/
+documents/
+projects/
+.nojekyll
+README.md
 
-- 从数学、Python 与神经网络基础开始
-- 学习脉冲神经元模型与时间编码
-- 复现小型 SNN 实验
-- 了解神经形态芯片与脑机接口
-- 将 SAO 式全潜行视为科幻启发下的长期精神坐标，而非当前技术承诺
-
-## 技术
-
-网站由原生 HTML、CSS 和 JavaScript 构成，可直接部署到 GitHub Pages。
-
-## 图像说明
-
-站内三幅黑白点画由 AI 根据站长提供的私人参考图重新绘制，仅作为页面装饰。网站不存放私人信件照片。
-
-## 访问
-
-https://itknow666.github.io/
+本包仅调整压缩包层级、部署说明，并添加空的 .nojekyll；网页内容和资源保持原样。
