@@ -1,0 +1,11 @@
+{
+  "version": "1.2.0",
+  "size_bytes": 2451169,
+  "sha256": "a1616ffe452361a65cb8f805270d78372bfb45d739f76721777033091078ef5f",
+  "apk_resource_and_asset_check": "passed",
+  "signature": "v2/v3 verified",
+  "native_vs_js_dates_tested": 217,
+  "widget_logic_tests": "passed",
+  "widget_settings_page_test": "passed",
+  "launcher_and_android_device_test": "not performed"
+}

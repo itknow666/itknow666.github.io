@@ -1,0 +1,8 @@
+{
+  "minimum_clearance_mil": 6,
+  "track_count": 2475,
+  "via_count": 184,
+  "issue_count": 0,
+  "issues": [],
+  "scope": "Geometric copper clearance checks only; does not replace native ERC/DRC."
+}

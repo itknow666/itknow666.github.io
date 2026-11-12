@@ -1,0 +1,1 @@
+PASS: idle, first open, stable window, close, reopen, restart, duplicate suppression, rapid hide/show, minimize/restore, unrelated-window isolation.
