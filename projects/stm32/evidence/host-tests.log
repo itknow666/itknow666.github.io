@@ -1,0 +1,3 @@
+PASS 3997 checks; synthetic sine worst Vpp error 0.0259%, frequency 0.0000%
+These are algorithm tests, not a physical board accuracy certificate.
+PASS 93 app checks: fresh mode transitions, hold, calibration, save failure, timeout and UART recovery

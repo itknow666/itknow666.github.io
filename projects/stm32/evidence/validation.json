@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-07",
+  "target": "STM32F103C8T6",
+  "compiler": "Keil Arm Compiler 6.24",
+  "hal": "STM32CubeF1 1.8.7",
+  "errors": 0,
+  "warnings": 0,
+  "code_bytes": 46044,
+  "ro_bytes": 2208,
+  "rw_bytes": 16,
+  "zi_bytes_including_4096_stack": 11496,
+  "rom_bytes": 48268,
+  "ram_bytes": 11512,
+  "flash_program_limit_bytes": 63488,
+  "hex_first_address": "0x8000000",
+  "hex_last_address": "0x800bc8f",
+  "initial_stack": "0x20002cf8",
+  "reset_vector": "0x8000101",
+  "calibration_pages": [
+    "0x0800F800",
+    "0x0800FC00"
+  ],
+  "algorithm_checks": 3997,
+  "application_checks": 93,
+  "physical_board_tested": false,
+  "physical_board_flashed": false,
+  "limits": "Synthetic algorithm and mocked app tests only; physical accuracy and timing require board calibration and acceptance."
+}
