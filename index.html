@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ITKNOW 的 AI 学习、实验与工程记录。">
+  <meta name="description" content="ITKNOW 的学习与项目记录，包括人工智能、计算机视觉和嵌入式方面的练习与实验。">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)">
-  <title>ITKNOW — 在实践中学习</title>
+  <title>ITKNOW：学习与项目记录</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
@@ -32,100 +32,74 @@
 
   <main id="main">
     <section class="hero wrap" id="top">
-      <p class="kicker"><span class="status-dot" aria-hidden="true"></span> PERSONAL LEARNING &amp; BUILD LOG</p>
-      <h1>把好奇心，<br><em>变成可运行的东西。</em></h1>
-      <p class="lede">你好，我是 ITKNOW。这里记录我在 AI、计算机视觉和嵌入式工程里的学习、实验与小成果。</p>
+      <p class="kicker">学习与项目记录 · 2026</p>
+      <h1>ITKNOW</h1>
+      <p class="lede">我是 ITKNOW。这里记录人工智能、计算机视觉和嵌入式工程方面的学习、实验和小成果。</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">探索项目 <span>↘</span></a>
-        <a class="btn btn-ghost" href="#journey">看看学习路线 <span>→</span></a>
-      </div>
-
-      <aside class="stat-panel" aria-label="精选实验：人体动作识别">
-        <div class="stat-top">
-          <span>FIELD NOTE <b>01 / 04</b></span>
-          <span class="spark" aria-hidden="true">✳</span>
-        </div>
-        <div class="stat-main">
-          <div>
-            <p class="stat-label">ACTION RECOGNITION</p>
-            <p class="stat-value">68<span>.24</span><small>%</small></p>
-          </div>
-          <p class="stat-note">公开验证集准确率<br>318 / 466 个动作片段</p>
-        </div>
-        <div class="stat-bottom">
-          <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <span>DEPTH + INFRARED<br>40 ACTION CLASSES</span>
-        </div>
-      </aside>
-      <div class="hero-index">
-        <span>01 — 04</span>
-        <span>THINK. BUILD. VERIFY.</span>
-        <span>SCROLL TO EXPLORE ↓</span>
+        <a class="btn btn-primary" href="#projects">查看项目</a>
+        <a class="btn btn-ghost" href="#journey">学习路线</a>
       </div>
     </section>
 
-    <section class="intro" aria-label="关于这份记录">
-      <div class="wrap intro-inner">
-        <p>不止记录结果，<br><strong>也记录怎么走到这里。</strong></p>
-        <div>从 Python 和 C 语言入手，逐步接触神经网络、视频识别与硬件程序。项目使用 AI 辅助学习、编写和验证；这里尽量保留实验条件、代码及局限。</div>
-        <span class="intro-mark">THE PRACTICE<br>IS THE PROGRESS ↗</span>
-      </div>
-    </section>
-
-    <section class="section wrap" id="projects">
+    <section class="section projects wrap" id="projects">
       <div class="section-head">
         <div>
           <p class="kicker">01 / SELECTED WORK</p>
-          <h2>做过的事<span>，</span><br>留下的记录。</h2>
+          <h2>项目</h2>
         </div>
-        <p>从一个小模型到完整的比赛实验，从软件算法到嵌入式工程。每个数字都尽可能连接到它的出处。</p>
+        <p>从手写数字和目标检测，到比赛中的动作识别，再到嵌入式和硬件。页面上的数字尽量注明出处。</p>
       </div>
 
-      <article class="feature">
+      <article class="feature" aria-label="精选实验：人体动作识别">
         <div class="feature-info">
-          <div class="project-top"><span>01 / COMPUTER VISION</span><span>2026</span></div>
+          <div class="project-top"><span>01 / 04 · COMPUTER VISION</span><span>2026</span></div>
           <h3>观行知意<br>人体动作识别</h3>
-          <p>围绕深度图与红外图，建立训练、验证、错误分析和离线推理流程；尝试 R(2+1)D、Swin、MViT、X3D、TSM、UniFormer 和 C3D 等方案。</p>
-          <div class="tags"><span>PYTORCH</span><span>VIDEO</span><span>EXPERIMENTS</span></div>
           <div class="feature-metrics">
-            <div><strong>68.24<small>%</small></strong><span>公开验证集准确率</span></div>
-            <div><strong>63.04<small>%</small></strong><span>40 类 Macro F1</span></div>
+            <div>
+              <strong class="metric-lg">68.24<small>%</small></strong>
+              <span>公开验证集准确率<br>318 / 466 个动作片段</span>
+            </div>
+            <div>
+              <strong>63.04<small>%</small></strong>
+              <span>40 类 Macro F1</span>
+            </div>
           </div>
-          <p class="disclaimer">318/466；多次使用验证集选择方案，存在选择偏差。隐藏测试结果未知，官方 Linux 环境尚未验证。</p>
-          <a class="text-link" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/action-recognition">查看实验与源码 <span>↗</span></a>
+          <p>用深度图和红外图做训练、验证、错误分析和离线推理。试过的模型有 R(2+1)D、Swin、MViT、X3D、TSM、UniFormer 和 C3D。</p>
+          <div class="tags"><span>PYTORCH</span><span>VIDEO</span><span>EXPERIMENTS</span><span>DEPTH + INFRARED</span><span>40 ACTION CLASSES</span></div>
+          <p class="disclaimer">318/466。方案多次按验证集挑选，存在选择偏差。隐藏测试结果未知，官方 Linux 环境尚未验证。</p>
+          <a class="btn btn-primary" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/action-recognition">查看实验与源码 <span>↗</span></a>
         </div>
         <div class="feature-art">
           <div class="figure-top"><span>EXPERIMENT RECORD</span><span>FIG. 01</span></div>
           <img src="assets/action-learning-curves.png" width="1920" height="640" alt="人体动作识别对照实验的学习曲线图" loading="lazy">
-          <p>对照实验中的训练曲线 · 来自实际运行记录</p>
-          <div class="figure-foot"><span>OBSERVE</span><span>→</span><span>COMPARE</span><span>→</span><span>ITERATE</span></div>
+          <p>对照实验中的训练曲线，来自实际运行记录。</p>
         </div>
       </article>
 
       <div class="project-grid">
         <article class="project-card">
-          <div class="project-top"><span>02 / DEEP LEARNING</span><span>↗</span></div>
-          <div class="card-symbol">03<span> / 10</span></div>
+          <div class="project-top"><span>02 / DEEP LEARNING</span><span>03 / 10</span></div>
           <h3>手写数字识别</h3>
-          <p>使用 PyTorch 编写小型 CNN，练习数据加载、训练循环、模型保存与重新加载。</p>
-          <div class="card-result"><b>95.87%</b><span>MNIST 测试集 · 9,587 / 10,000<br>5,000 张训练样本，训练 3 轮</span></div>
-          <a class="text-link" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/mnist/README.md">代码与结果 <span>↗</span></a>
+          <p>用 PyTorch 写了一个小型 CNN，练习数据加载、训练循环、模型保存和重新加载。</p>
+          <div class="tags"><span>PYTORCH</span><span>CNN</span><span>MNIST</span></div>
+          <div class="card-result"><b>95.87%</b><span>MNIST 测试集 9,587 / 10,000。训练样本 5,000 张，训练 3 轮。</span></div>
+          <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/mnist/README.md">代码与结果 <span>↗</span></a>
         </article>
         <article class="project-card">
-          <div class="project-top"><span>03 / COMPUTER VISION</span><span>↗</span></div>
-          <div class="card-symbol brackets">[ &nbsp; ]<span>DETECT / CLASSIFY</span></div>
+          <div class="project-top"><span>03 / COMPUTER VISION</span><span>DETECT / CLASSIFY</span></div>
           <h3>YOLO 目标检测</h3>
-          <p>调用 Ultralytics 官方预训练模型，对官方示例图像完成检测，理解类别、置信度和边界框。</p>
-          <div class="card-result"><b>5 <small>个</small></b><span>示例图像中的检测目标<br>使用预训练权重，并非自行训练</span></div>
-          <a class="text-link" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/yolo/README.md">查看实践代码 <span>↗</span></a>
+          <p>调用 Ultralytics 官方预训练模型，对官方示例图像做检测，查看类别、置信度和边界框。</p>
+          <div class="tags"><span>YOLO</span><span>ULTRALYTICS</span><span>PRETRAINED</span></div>
+          <div class="card-result"><b>5 <small>个</small></b><span>示例图像中的检测目标。使用预训练权重，并非自行训练。</span></div>
+          <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/yolo/README.md">查看实践代码 <span>↗</span></a>
         </article>
         <article class="project-card">
-          <div class="project-top"><span>04 / EMBEDDED</span><span>↗</span></div>
-          <div class="card-symbol signal">∿<span>STM32 / HAL</span></div>
+          <div class="project-top"><span>04 / EMBEDDED</span><span>STM32 / HAL</span></div>
           <h3>信号测量工程</h3>
-          <p>STM32F103 工程包含信号处理、显示、按键和校准逻辑；通过编译及主机端软件测试。</p>
-          <div class="card-result"><b>0 <small>错误</small></b><span>Keil 编译记录<br>硬件尚未上板验收</span></div>
-          <a class="text-link" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/stm32/README.md">代码与验证记录 <span>↗</span></a>
+          <p>STM32F103 工程，包含信号处理、显示、按键和校准逻辑。已通过编译，并做了主机端软件测试。</p>
+          <div class="tags"><span>STM32F103</span><span>HAL</span><span>KEIL</span></div>
+          <div class="card-result"><b>0 <small>错误</small></b><span>Keil 编译记录。硬件尚未上板验收。</span></div>
+          <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/stm32/README.md">代码与验证记录 <span>↗</span></a>
         </article>
       </div>
 
@@ -133,19 +107,60 @@
         <div class="section-head more-heading">
           <div>
             <p class="kicker">MORE FROM OTHER WORKSPACES</p>
-            <h3>更多实践与探索</h3>
+            <h3>其他项目</h3>
           </div>
-          <p>来自不同工作区的工程记录，继续补全这条学习路径。</p>
+          <p>下面是其他工作区里的工程记录。</p>
         </div>
-        <div class="work-list">
-          <a href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/campus-timetable"><span>05 / ANDROID</span><div><h4>课表与桌面小组件</h4><p>Java、WebView 与原生小组件；217 天排课逻辑对照，尚未完成真机验证。</p></div><b>↗</b></a>
-          <a href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/startup-animation"><span>06 / WINDOWS</span><div><h4>窗口监听与启动动画</h4><p>C# 窗口状态检测、动画覆盖与异常重启流程。</p></div><b>↗</b></a>
-          <a href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/pcb-design"><span>07 / HARDWARE</span><div><h4>信号测量 PCB 设计记录</h4><p>原理图、PCB 和几何间距检查；尚需原生 ERC/DRC 与实物验收。</p></div><b>↗</b></a>
-          <a href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/signal-analyzer"><span>08 / EMBEDDED</span><div><h4>信号分析算法原型</h4><p>纯 C 测量算法与合成信号测试，是信号测量工程的早期版本。</p></div><b>↗</b></a>
-          <a href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/local-llm"><span>09 / GENERATIVE AI</span><div><h4>本地语言模型微调探索</h4><p>LoRA 微调、本地推理与留出数据对照评估；效果仍待实际试用。</p></div><b>↗</b></a>
-          <a href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/stm32-peripherals"><span>10 / HARDWARE STUDY</span><div><h4>STM32 外设学习练习</h4><p>GPIO、ADC、PWM、I²C、UART、定时器等 28 组用户代码摘录。</p></div><b>↗</b></a>
+        <div class="project-grid more-grid">
+          <article class="project-card">
+            <div class="project-top"><span>05 / ANDROID</span></div>
+            <h3>课表与桌面小组件</h3>
+            <p>使用 Java、WebView 和原生小组件。做过 217 天排课逻辑对照，尚未完成真机验证。</p>
+            <div class="tags"><span>JAVA</span><span>WEBVIEW</span><span>ANDROID</span></div>
+            <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/campus-timetable">查看记录 <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>06 / WINDOWS</span></div>
+            <h3>窗口监听与启动动画</h3>
+            <p>C# 窗口状态检测、动画覆盖和异常重启流程。</p>
+            <div class="tags"><span>C#</span><span>WINDOWS</span></div>
+            <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/startup-animation">查看记录 <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>07 / HARDWARE</span></div>
+            <h3>信号测量 PCB 设计记录</h3>
+            <p>原理图、PCB 和几何间距检查。尚需原生 ERC/DRC 与实物验收。</p>
+            <div class="tags"><span>PCB</span><span>HARDWARE</span></div>
+            <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/pcb-design">查看记录 <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>08 / EMBEDDED</span></div>
+            <h3>信号分析算法原型</h3>
+            <p>纯 C 的测量算法和合成信号测试，是信号测量工程的早期版本。</p>
+            <div class="tags"><span>C</span><span>EMBEDDED</span></div>
+            <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/signal-analyzer">查看记录 <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>09 / GENERATIVE AI</span></div>
+            <h3>本地语言模型微调探索</h3>
+            <p>做了 LoRA 微调、本地推理，并用留出数据做对照评估。实际效果还需要试用。</p>
+            <div class="tags"><span>LORA</span><span>LLM</span></div>
+            <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/local-llm">查看记录 <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span>10 / HARDWARE STUDY</span></div>
+            <h3>STM32 外设学习练习</h3>
+            <p>GPIO、ADC、PWM、I²C、UART、定时器等 28 组用户代码摘录。</p>
+            <div class="tags"><span>GPIO</span><span>ADC</span><span>PWM</span><span>I²C</span><span>UART</span></div>
+            <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/tree/main/projects/stm32-peripherals">查看记录 <span>↗</span></a>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="about wrap" aria-label="关于这些记录">
+      <h2>关于这些记录</h2>
+      <p>这里不只写最后的结果，也写做到这一步的过程。学习从 Python 和 C 语言开始，之后接触神经网络、视频识别和硬件程序。项目里使用 AI 辅助学习、编写和验证。页面尽量保留实验条件、代码和已知局限。</p>
     </section>
 
     <section class="journey" id="journey">
@@ -153,19 +168,19 @@
         <div class="section-head">
           <div>
             <p class="kicker">02 / THE LEARNING PATH</p>
-            <h2>学习，是一条<br><em>不断回访的路。</em></h2>
+            <h2>学习路线</h2>
           </div>
-          <p>这些是已有的练习与路线材料，不把资料齐全当成课程已经完成。</p>
+          <p>下面是已经整理的练习和材料。材料放在这里，并不表示课程已经学完。</p>
         </div>
         <div class="steps">
-          <article><span>01</span><h3>编程与工具</h3><p>Python 基础、C 语言、命令行、VS Code，以及读取文件与排查错误。</p><small>PYTHON · C · GIT</small></article>
-          <article><span>02</span><h3>理解模型</h3><p>从 NumPy、图像与张量出发，理解卷积、梯度、训练循环和 LIF 神经元。</p><small>NUMPY · PYTORCH · SNN</small></article>
-          <article><span>03</span><h3>实验与验证</h3><p>整理数据，比较模型，观察准确率与 Macro F1，并记录失败和局限。</p><small>DATA · METRICS · EVALUATION</small></article>
-          <article><span>04</span><h3>工程与交付</h3><p>整理依赖、离线推理与复现说明；同时探索 STM32 程序与软件测试。</p><small>INFERENCE · EMBEDDED</small></article>
+          <article><span>01</span><h3>编程与工具</h3><p>Python 基础、C 语言、命令行、VS Code，以及读取文件和排查错误。</p><small>PYTHON · C · GIT</small></article>
+          <article><span>02</span><h3>理解模型</h3><p>从 NumPy、图像和张量开始，学习卷积、梯度、训练循环和 LIF 神经元。</p><small>NUMPY · PYTORCH · SNN</small></article>
+          <article><span>03</span><h3>实验与验证</h3><p>整理数据，比较模型，查看准确率和 Macro F1，并记录失败和局限。</p><small>DATA · METRICS · EVALUATION</small></article>
+          <article><span>04</span><h3>工程与交付</h3><p>整理依赖、离线推理和复现说明，同时做 STM32 程序和软件测试。</p><small>INFERENCE · EMBEDDED</small></article>
         </div>
         <div class="journey-foot">
-          <p>13 节课程与参考答案已整理；学习讨论已进行到张量与自动求导。</p>
-          <a class="text-link" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/learning/README.md">打开学习材料 <span>↗</span></a>
+          <p>已整理 13 节课程和参考答案。学习讨论目前进行到张量和自动求导。</p>
+          <a class="btn btn-ghost" href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/learning/README.md">打开学习材料 <span>↗</span></a>
         </div>
       </div>
     </section>
@@ -174,25 +189,24 @@
       <div class="section-head">
         <div>
           <p class="kicker">03 / OPEN NOTEBOOK</p>
-          <h2>把过程<br>一起打开。</h2>
+          <h2>实验笔记</h2>
         </div>
-        <p>好的实验不只展示最好的一次，也需要保留方法、对比条件与尚未解决的问题。</p>
+        <p>笔记里保留实验方法、对照条件和尚未解决的问题，不只放结果最好的一次。</p>
       </div>
       <div class="note-list">
-        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/action-recognition/runs/ablation-v4-20261027/实验结果.md"><span>01</span><div><h3>裁剪策略、分阶段微调与学习率对照</h3><p>记录五组实验条件、验证结果与选择偏差。</p></div><span class="note-type">EXPERIMENT ↗</span></a>
-        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/action-recognition/runs/candidates-v6-20261106/实验结果.md"><span>02</span><div><h3>四种视频模型的短训练筛选</h3><p>不同架构与输入条件的探索；短训成绩并不代表模型上限。</p></div><span class="note-type">RESEARCH ↗</span></a>
-        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/stm32/evidence/validation.json"><span>03</span><div><h3>STM32 的软件验证记录</h3><p>编译、合成信号与模拟外设测试，以及明确的实物验收边界。</p></div><span class="note-type">VERIFICATION ↗</span></a>
-        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/snn/lif_quickstart.py"><span>04</span><div><h3>LIF 脉冲神经元的小练习</h3><p>从离散时间步、电压和阈值发放开始理解 SNN。</p></div><span class="note-type">CODE ↗</span></a>
+        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/action-recognition/runs/ablation-v4-20261027/实验结果.md"><span>01</span><div><h3>裁剪策略、分阶段微调与学习率对照</h3><p>记下五组实验的条件、验证结果和选择偏差。</p></div><span class="note-type">EXPERIMENT ↗</span></a>
+        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/action-recognition/runs/candidates-v6-20261106/实验结果.md"><span>02</span><div><h3>四种视频模型的短训练筛选</h3><p>比较不同结构和输入。短时间训练的成绩不能代表模型上限。</p></div><span class="note-type">RESEARCH ↗</span></a>
+        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/stm32/evidence/validation.json"><span>03</span><div><h3>STM32 的软件验证记录</h3><p>包括编译、合成信号和模拟外设测试，并写明实物验收还没有做。</p></div><span class="note-type">VERIFICATION ↗</span></a>
+        <a href="https://github.com/itknow666/itknow666.github.io/blob/main/projects/snn/lif_quickstart.py"><span>04</span><div><h3>LIF 脉冲神经元的小练习</h3><p>从离散时间步、电压和阈值发放看起，用来理解 SNN。</p></div><span class="note-type">CODE ↗</span></a>
       </div>
     </section>
 
     <section class="closing">
       <div class="wrap closing-inner">
-        <p class="kicker">STILL LEARNING / ALWAYS BUILDING</p>
-        <h2>下一次探索，<br><em>正在路上。</em></h2>
+        <h2>记录会继续更新。</h2>
         <div class="closing-row">
-          <p>这里是持续更新的学习记录。<br>欢迎查看代码、实验和更多项目。</p>
-          <a class="btn btn-inverse" href="https://github.com/itknow666">访问我的 GitHub <span>↗</span></a>
+          <p>代码、实验和其他项目可以在 GitHub 上查看。</p>
+          <a class="btn btn-inverse" href="https://github.com/itknow666">打开 GitHub <span>↗</span></a>
         </div>
       </div>
     </section>
@@ -201,7 +215,7 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <span class="footer-brand">ITKNOW <sup>✳</sup></span>
-      <p>AI · ENGINEERING · LEARNING IN PUBLIC</p>
+      <p>人工智能 · 工程 · 公开学习记录</p>
       <a href="#top">回到顶部 ↑</a>
     </div>
   </footer>
